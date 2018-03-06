@@ -1,4 +1,3 @@
-
 const { handleCollision } = require('../../src/helpers/handleCollision');
 const Models = require('../../models');
 
