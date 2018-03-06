@@ -12,7 +12,8 @@
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
-    "jest": "^22.3.0"
+    "jest": "^22.3.0",
+    "sinon": "^4.4.2"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
