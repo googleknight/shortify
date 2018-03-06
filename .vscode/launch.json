@@ -11,6 +11,7 @@
             "program": "${workspaceFolder}/node_modules/jest/bin/jest",
             "internalConsoleOptions": "openOnSessionStart",
             "args": [
+                "${workspaceFolder}/test/handlers/handleLongToShort.test.js",
                 "--runInBand",
             ],
             "env": {
