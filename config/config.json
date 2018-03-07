@@ -4,7 +4,11 @@
     "password": "admin",
     "database": "shortifydb_dev",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "pool":{
+      "min": 1,
+      "max": 100
+    }
   },
   "test": {
     "username": "shubham",

@@ -6,9 +6,9 @@
   "scripts": {
     "test": "NODE_ENV=test sequelize db:migrate:undo:all && NODE_ENV=test sequelize db:migrate && jest --forceExit --coverage --runInBand",
     "start": "node src/server/server.js",
-    "startpm2":"pm2 start src/server/server.js -i max",
-    "pm2log":"pm2 logs",
-    "stoppm2":"pm2 stop src/server/server.js -i max"
+    "startpm2": "pm2 start src/server/server.js -i max",
+    "pm2log": "pm2 logs",
+    "stoppm2": "pm2 stop src/server/server.js -i max"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "hapi": "^16.6.2",
     "md5": "^2.2.1",
     "pg": "^7.4.1",
+    "redis": "^2.8.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
     "sequelize": "^4.32.3",

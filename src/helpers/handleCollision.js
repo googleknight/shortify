@@ -9,7 +9,7 @@ function handleCollision(longUrl, initial, final) {
     },
   }).then((shortUrlDb) => {
     if (shortUrlDb === null || shortUrlDb.shortUrl !== shortUrl) return shortUrl;
-    else if (final < 31) { return handleCollision(longUrl, initial + 1, final + 1); }
+    else if (final < 23) { return handleCollision(longUrl, initial + 1, final + 1); }
     return null;
   });
 }
