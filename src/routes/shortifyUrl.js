@@ -29,7 +29,7 @@ module.exports = [
       Models.urls.findOne({ where: { shortUrl: request.query.shortUrl } })
         .then((urldata) => {
           response({
-            shortUrl: urldata.longUrl,
+            longUrl: urldata.longUrl,
             statusCode: 200,
           });
         })
