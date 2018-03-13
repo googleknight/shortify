@@ -9,7 +9,7 @@
     "startpm2": "pm2 start src/server/server.js -i max",
     "pm2log": "pm2 logs",
     "stoppm2": "pm2 stop src/server/server.js -i max",
-    "circleciTest": "NODE_ENV=ci_test sequelize db:migrate:undo:all && NODE_ENV=ci_test sequelize db:migrate && NODE_ENV=ci_test node_modules/.bin/jest --coverage --runInBand --forceExit"
+    "circleciTest": "NODE_ENV=circleci_test sequelize db:migrate:undo:all && NODE_ENV=circleci_test sequelize db:migrate && NODE_ENV=circleci_test node_modules/.bin/jest --coverage --runInBand --forceExit"
   },
   "author": "",
   "license": "ISC",
