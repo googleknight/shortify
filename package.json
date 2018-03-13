@@ -8,7 +8,8 @@
     "start": "node src/server/server.js",
     "startpm2": "pm2 start src/server/server.js -i max",
     "pm2log": "pm2 logs",
-    "stoppm2": "pm2 stop src/server/server.js -i max"
+    "stoppm2": "pm2 stop src/server/server.js -i max",
+    "circleciTest": "npm run lint && NODE_ENV=circleci_test sequelize db:migrate && lab -e circleci_test -v -t 70"
   },
   "author": "",
   "license": "ISC",

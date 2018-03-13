@@ -23,5 +23,12 @@
     "database": "shortifydb_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
+  },
+  "circleci_test": {
+    "username": "postgres",
+    "password": "root",
+    "database": "shortifydb_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
   }
 }
